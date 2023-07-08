@@ -1,0 +1,183 @@
+/* custom font */
+
+@font-face{
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf)
+}
+
+p{
+    font-family: Roboto;
+}
+
+/* rounding corners */
+
+#box{
+    width: 100px;
+    height: 100px;
+    border:1px solid black;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 50%;
+}
+
+/* rounding corners for an image */
+#box2{
+    width:300px;
+    height:300px;
+    border:5px solid violet;
+    border-radius: 50%;
+    background-image: url(rapita.jpg); /*am pus o poza ca backgroud */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+/* box shadow */
+
+#box3{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    box-shadow: -6px 3px 14px #3630FF; /* iau coord de pe site-ul box shadow generator*/
+    margin-top: 20px;
+
+}
+
+/*text shadow */
+
+.text{
+    text-shadow: -11px 17px 7px #261DCE;
+    color: red;
+}
+
+/*background*/
+
+.background{
+    height:400px;
+    width:400px;
+    background-image:url(nasa.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border:1px solid black;
+    filter: blur(2px);
+  
+
+  
+}
+
+.blur{
+    filter: blur(0px); /* 0px inseamna opacitate 0 */
+    z-index: 3;
+    left: 3%;
+    top: 110%;
+    position:absolute;
+    color: white
+}
+
+/* transitions */
+
+/* acum cu hover simplu */
+.box5{
+    width: 500px;
+    height: 500px;
+    border: 2px solid green;
+    transition: all 1s ease-in-out 0.2s;
+}
+
+.box5:hover{
+    background-color: aqua;
+    padding: 50px;
+}
+
+/* transition pe buton*/ 
+#button{
+    margin-top: 30px;
+    background-color: blue;
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid blue;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-bottom: 30px;
+
+}
+#button:hover{
+    color:blue;
+    background-color: white;
+
+}
+
+
+
+.link{
+    color:red;
+    transition: all 0.3s;
+}
+
+.link:hover{
+    color: purple;
+}
+
+/* Animations */
+
+@keyframes animatiaMea{
+    0%{
+        background-color: coral;
+        padding: 15px;
+    }
+    40%{
+        background-color: brown;
+        margin-left: 800px;
+    }
+    70%{
+        background-color: green;
+        margin-top: 50px;
+    }
+    100%{
+        border: 3px solid red;
+
+    }
+
+}
+
+#animation{
+    width: 100px;
+    height: 100px;
+    border:1px solid black;
+    animation-name: animatiaMea;
+    animation-duration: 5s;
+    animation-iteration-count:2; /*infinite; se misca non stop -> nu e indicata a fi folos abuziv de mai multe ori in aceeasi pagina; mananca resurse */
+
+}
+
+/* media */
+
+@media screen and (max-width: 600px){
+    .link{
+        color: black
+    }
+    #animation{
+        width: 100px;
+        height: 100px;
+        border:1px solid black;
+        animation-name: animatiaMea;
+        animation-duration: 3s;
+    }
+
+    .background{
+        border-radius: 50%;
+
+    }
+    #box3{
+        background-color: chartreuse;
+    }
+    #box{
+        border:5px solid blue;
+    }
+}
+
+
+

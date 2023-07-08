@@ -1,0 +1,47 @@
+@font-face{
+    font-family: Robot; /* ii putem da orice nume */
+    src: url(Robot.ttf); /* important */
+}
+.lorem::first-letter{
+    font-size: 50px;
+    color: green;
+    font-family: Robot;
+}
+
+.lorem2::first-line{
+    font-size: 50px;
+    color: brown;
+}
+
+.list{
+    list-style-type: none;
+}
+
+.list li::before{
+    content: " ";
+    /* sunt display inline default  */
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(danger.png); /* https://www.freepik.com/ */ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+.subtitle::after {
+    content: " ";
+    display: block; /* ii dam block sa se aseze unul sub altul*/ 
+    width: 100px;
+    height: 100px;
+    background-image: url(tree1.jpg);
+    background-size: cover;
+    margin: 0 auto; /*  ca imaginea sa fie centrata: 0 este sus si jos, auto e pt stanga dreapa*/
+
+     
+}

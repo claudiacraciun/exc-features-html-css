@@ -1,0 +1,9 @@
+/* div:empty{
+    width: 100px;
+    height: 150px;
+    background-color: aquamarine;
+} */
+
+div:not(:empty){
+    font-size: 30px;
+}

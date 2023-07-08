@@ -1,0 +1,62 @@
+.card{
+    background-color: rgb(208, 140, 210);
+    width: 200px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 5px;
+
+}
+
+.card .image{ /* 2 clase */ 
+    background-image: url(finance1.jpg);
+    background-size: cover;
+    height: 150px;
+    background-position: center;
+
+
+}
+
+.card h3 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}
+
+.card h5 {
+    margin-left:20px;
+
+}
+
+.card h5::after {
+    content:" - TVA inclus";
+    display: block;
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+.card button{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: pink;
+
+}
+
+/* Positioning of the elem in a container */ 
+.container{
+    display:flex;
+    background-color: #efefef;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around; /* */ 
+    flex-wrap: wrap; /* wrapping */
+    height:400px;
+    align-items: flex-center;
+
+}
+

@@ -1,0 +1,5 @@
+/*p:first-child*/
+
+p:first-child {
+    color: red;
+}
